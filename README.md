@@ -1,217 +1,163 @@
-# 🛒 ShopSphere — Final Year E-Commerce Frontend Project
+# 🛒 ShopSphere — Modern E-Commerce Frontend
 
-<div align="center">
+ShopSphere is a modern, responsive e-commerce frontend built with React and Vite. It demonstrates product browsing, cart and wishlist interactions, checkout, orders, account UI, dashboard features, responsive navigation, and theme switching.
 
-### A dynamic React e-commerce experience built for learning, demonstration and portfolio use.
+## ✨ Features
 
-**React.js · Vite · JavaScript · CSS · LocalStorage**
-
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-ShopSphere-7c3aed?style=for-the-badge)](https://shopsphereweb.vercel.app/)
-
-</div>
-
----
-
-## 📌 Project Overview
-
-ShopSphere is a **final-year-level frontend e-commerce project** created to demonstrate practical knowledge of React development, component-based architecture, client-side routing, state management, responsive UI design and browser persistence.
-
-The application simulates a complete shopping journey — from discovering products and filtering the catalog to managing a wishlist, adding products to a cart, completing a demo checkout and viewing order history.
-
-> **Note:** This is a frontend portfolio/academic project. Payments are simulated and no real transaction is processed.
-
-## ✨ Key Features
-
-- 🔎 Real-time product search
-- 🗂️ Category filtering
-- 💰 Price range filtering
-- ↕️ Multiple sorting options
-- 🔥 Trending, deals and top-rated product sections
-- 🛍️ Product detail pages with related products
-- ❤️ Wishlist with LocalStorage persistence
-- 🛒 Shopping cart with quantity and stock controls
-- 🔔 Interactive toast notifications
-- 👤 Demo account/login flow
-- 📦 Demo checkout with delivery and payment-method selection
-- 🧾 Persistent order history
-- 📊 Interactive admin/dashboard analytics
-- 🌙 Dark/light theme
-- 📱 Responsive mobile navigation
-- 🖼️ Broken-image fallback handling
-- ⚡ Loading/skeleton states
-- ❌ 404 page and product error handling
-
-## 🧠 Concepts Demonstrated
-
-This project demonstrates practical frontend concepts including:
-
-- React functional components
-- React Hooks (`useState`, `useEffect`, `useMemo`, `useCallback`)
-- Context API for global state management
-- React Router for client-side navigation
-- URL search parameters
-- Component reusability
-- LocalStorage persistence
-- Form validation
-- Dynamic filtering and sorting
-- Responsive CSS
-- Error and empty states
-- Derived application data and dashboard metrics
+- 🛍️ Modern responsive e-commerce UI
+- 🔎 Product search and category filtering
+- 📦 Product listing and product detail pages
+- 🛒 Shopping cart with quantity controls
+- ❤️ Wishlist functionality
+- ⭐ Product ratings and reviews UI
+- 🏷️ Product badges and stock indicators
+- 💳 Checkout interface
+- 👤 Login and account interface
+- 📋 Orders page
+- 📊 Dashboard with statistics and sales visualization
+- 🌙 Light / dark theme
+- 💾 Persistent state using LocalStorage
+- 📱 Responsive navigation with mobile menu
+- ⚛️ Reusable React components
+- 🔀 Client-side routing
+- 🔔 Toast notifications
+- 📱 Desktop, tablet and mobile support
 
 ## 🛠️ Tech Stack
 
-- **React.js**
-- **Vite**
-- **JavaScript (ES6+)**
-- **HTML5**
-- **CSS3**
-- **React Router**
-- **Lucide React**
-- **LocalStorage API**
+- React
+- Vite
+- JavaScript
+- CSS
+- React Router
+- Lucide React
+- LocalStorage
+- Fake Store API
 
 ## 📂 Project Structure
 
 ```text
 ShopSphere/
-│
+├── public/
 ├── src/
 │   ├── components/
-│   │   ├── Footer.jsx
-│   │   ├── Loader.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── ProductCard.jsx
-│   │   └── Toast.jsx
-│   │
-│   ├── context/
-│   │   └── AppContext.jsx
-│   │
-│   ├── data/
-│   │   └── products.js
-│   │
 │   ├── pages/
-│   │   ├── Admin.jsx
-│   │   ├── Cart.jsx
-│   │   ├── Checkout.jsx
-│   │   ├── Home.jsx
-│   │   ├── Login.jsx
-│   │   ├── NotFound.jsx
-│   │   ├── Orders.jsx
-│   │   ├── ProductDetails.jsx
-│   │   ├── Products.jsx
-│   │   └── Wishlist.jsx
-│   │
-│   ├── services/
-│   │   └── api.js
-│   │
+│   ├── context/
+│   ├── data/
 │   ├── App.jsx
 │   ├── main.jsx
+│   ├── styles.css
 │   └── styles-modern.css
-│
 ├── index.html
 ├── package.json
-├── vercel.json
 └── README.md
 ```
 
-## ✅ Fixed in This Version
-
-- Dark/light mode now uses the same `data-theme` system as the stylesheet.
-- Removed the conflicting legacy stylesheet that was overriding product text colors.
-- Product names, prices, original prices, discounts and ratings remain readable in dark mode.
-- Trending section headings and product badges remain visible in both themes.
-- Product images keep a clean light image surface in dark mode for better product visibility.
-- Theme preference is still saved in LocalStorage.
-- Broken product images fall back to a placeholder.
-- The project uses one active stylesheet to avoid conflicting CSS rules.
-
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/virendraSingh17/shopsphere.git
-```
-
-### 2. Open the Project
-
-```bash
+git clone https://github.com/YOUR-USERNAME/shopsphere.git
 cd shopsphere
 ```
 
-### 3. Install Dependencies
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Start the Development Server
+### 3. Start the development server
 
 ```bash
 npm run dev
 ```
 
-Open the local URL shown by Vite in your browser.
+Open the local URL shown in the terminal.
 
-### 5. Create a Production Build
+Usually:
+
+```text
+http://localhost:5173
+```
+
+## 📦 Build for Production
 
 ```bash
 npm run build
 ```
 
-### 6. Preview the Production Build
+To preview the production build:
 
 ```bash
 npm run preview
 ```
 
-## 💾 Data & Persistence
+## 📄 Main Pages
 
-ShopSphere uses browser **LocalStorage** to persist:
-
-- Shopping cart
+- Home
+- Shop
+- Product Details
 - Wishlist
-- Demo user account
+- Cart
+- Checkout
+- Login / Account
 - Orders
-- Theme preference
+- Dashboard
 
-No backend database is required to run the project.
+## 💡 Key Highlights
 
-## 🎓 Why This Is a Final-Year Project
+### Component Architecture
 
-The project goes beyond a static e-commerce UI by implementing multiple connected application flows:
+Reusable React components keep the interface organized, scalable and maintainable.
 
-**Product Discovery → Search & Filters → Product Details → Wishlist → Cart → Checkout → Orders → Dashboard**
+### Client-Side Routing
 
-It also demonstrates reusable components, global state management, client-side routing, persistent browser data, validation, responsive design and error handling.
+The application uses client-side routing to connect product, cart, wishlist, checkout, orders and dashboard flows.
 
-## 🔮 Future Scope
+### Persistent State
 
-- Connect a real backend using Node.js and Express
-- Add MongoDB or PostgreSQL database integration
-- Implement JWT authentication
-- Add real payment gateway integration
-- Create a real admin product-management system
-- Add product reviews and ratings
-- Add backend APIs and server-side validation
-- Add automated testing
-- Deploy frontend and backend independently
+Cart, wishlist, theme, account and order-related state are stored in the browser using LocalStorage.
 
-## 👨‍💻 Developer
+### Responsive UX
 
-**Virendra Singh**  
-BCA Student | Frontend Developer
+The interface adapts to desktop, tablet and mobile screen sizes with responsive navigation, grids and controls.
 
-- GitHub: [@virendraSingh17](https://github.com/virendraSingh17)
-- LinkedIn: [Virendra Singh](https://www.linkedin.com/in/virendra-singh/)
+## 🎨 Design
 
----
+ShopSphere uses a clean modern visual system featuring:
 
-<div align="center">
+- Minimal e-commerce layout
+- Rounded product cards
+- Responsive product grids
+- Light and dark themes
+- Modern typography
+- Hover interactions
+- Product badges
+- Responsive navigation
+- Accessible focus states
 
-### 🛒 ShopSphere
+## 🌐 API
 
-**Learn · Build · Test · Improve**
+Product data is integrated using the Fake Store API.
 
-⭐ Thanks for visiting the project!
+## 🔮 Future Improvements
 
-</div>
+- Real authentication
+- Backend API integration
+- Real payment gateway
+- Product reviews
+- Admin product management
+- Database integration
+- User profile management
+- Order tracking
+- Advanced product filtering
+
+## 📌 Purpose
+
+This project was developed as a frontend portfolio project to demonstrate React development, responsive UI design, state management, routing and modern e-commerce functionality.
+
+## 📄 License
+
+This project is created for educational and portfolio purposes.
